@@ -8,6 +8,7 @@
  *
  * Return: Nothing
  */
+
 void shell_sort(int *array, size_t size)
 {
 	size_t gap, a, b;
@@ -34,4 +35,20 @@ void shell_sort(int *array, size_t size)
 		}
 		print_array(array, size);
 	}
+}
+
+/**
+ * temp_swap - this function swaps two pointers to integers
+ *
+ * @x: first integer pointer
+ * @y: second integer pointer
+ */
+void temp_swap(int *x, int *y)
+{
+        int temp;
+
+        temp = *x;
+        *x = *y;
+        *y = temp;
+
 }
