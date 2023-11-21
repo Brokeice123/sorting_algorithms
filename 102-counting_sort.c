@@ -1,5 +1,9 @@
 #include "sort.h"
 
+int *create_copy(const int *original, size_t size);
+int find_max_value(const int *array, size_t size);
+void counting_sort(int *array, size_t size);
+
 /**
  * create_copy - Creates a copy of the original array.
  * @original: The original array to be copied.
@@ -20,6 +24,7 @@ int *create_copy(const int *original, size_t size)
 
 	return (copy);
 }
+
 /**
  * find_max_value - Finds the maximum value in the array.
  * @array: The array to find the maximum value from.
