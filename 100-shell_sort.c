@@ -45,10 +45,9 @@ void shell_sort(int *array, size_t size)
  */
 void temp_swap(int *x, int *y)
 {
-        int temp;
+	int temp;
 
-        temp = *x;
-        *x = *y;
-        *y = temp;
-
+	temp = *x;
+	*x = *y;
+	*y = temp;
 }
